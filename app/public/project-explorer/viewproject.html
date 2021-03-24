@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content ="width=device-width, initial-scale=1.0">
+<link rel = "stylesheet" href = "css/bootstrap.min.css">
+<title>viewproject.html</title>
+</head>
+<body>
+
+  <div class="container-fluid">
+   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+   <a class="navbar-brand" href="#">Project Explorer</a>
+
+   <form class="form-inline">
+     <label for="searchForm"></label>
+     <input class="form-control" placeholder="Search Projects"/>
+     <button type="button" class="btn button btn-outline-light btn-mg-10 btn-primary">Search</button>
+  </form>
+
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="navbar-item">
+          <a class="nav-link" href="#">Submit</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="navbar-item">
+          <a class="nav-link" href="#">Sign Up</a>
+        </li>
+        <li class="navbar-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+      </ul>
+   </div>
+  </nav> <br>
+  <main> 
+    <div class="container">
+    <h3>Project 1</h3>
+     <div class="container bg-light pt-2">
+      <div class="row">
+        <div class="col">
+     <ul class="list-unstyled">
+       <li>Created By <br>Ade Chris</li>
+      </div>
+      <div class="col">
+       <li class="list-unstyled">Date Created<br>2020-08-30</li>
+        </div>
+
+        <div class="col">
+        <li class="list-unstyled">Last Updated<br>2020-08-30</li> 
+        </div> 
+        
+        <div class="col">
+          <div class="d-flex justify-content-end">
+            <a class="btn button btn-primary btn-lg" href="editproject.html" role="button">Edit Project</a>
+        </div>
+        </div>
+      </ul>
+     </div>
+    </div>
+<br>
+    <div class="row">
+      <div class="col-sm-6">
+        <div>
+          <h3>Project Abstract</h3>
+      <form>
+ <div class="form-group">
+ <label for="projectAbstract" class="form-label"></label><br>
+ <textarea id="text" class="form-control" name ="abstract" rows="10" cols="57" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."></textarea><br>
+ </div>
+
+ <h3>Comments</h3>
+ <div class="form-group">
+ <label for="comments" class="form-label"></label>
+ <textarea id="text" class="form-control" name ="abstract" rows="5" cols="57" placeholder="Leave a comment"></textarea>
+ </div>
+ <button type="submit" class="btn btn-primary">Submit</button>
+ <br> 
+ <div class="card">
+  <div class="card-body">
+    <p class="card-text text-center">No comments added yet</p>
+  </div>
+</div>
+ </form> 
+ </div>
+ </div>
+  
+  <div class="col-sm-6">
+        <div>
+          <h3>Project Details</h3><br>
+      <form name="EditProject">
+        <div class="card">
+          <div class="card-header">
+            Author(s)
+          </div>
+          <div class="card">
+          <div class="card-body">
+            <p class="card-text">Ade Chris</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="card-link">#web</a>
+          </div>
+        </div><br>
+        <div class="card">
+          <div class="card-header">
+            Project Files
+          </div>
+          <div class="card">
+          <div class="card-body">
+            <p class="card-text text-center">No files Uploaded yet</p>
+          </div>
+        </div>
+       
+ </form> 
+ </div>
+ </div>
+  </div>
+</div>
+</div> 
+   </main>
+   <br>
+   <!-- start footer -->
+    <div class="card-footer text-right">
+      Project Explorer © 2020 . <a href="#">Edconnect</a> 
+    </div>
+
+   <!-- end footer -->
+</div>
+<scrip src="/js/jquery.min.js"></scrip>
+<scrip src="/js/jpopper.min.js"></scrip>
+<scrip src="/js/bootstrap.min.js"></scrip>
+</body>
+</html>

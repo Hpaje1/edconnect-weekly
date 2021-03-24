@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content ="width=device-width, initial-scale=1.0">
+<link rel = "stylesheet" href = "css/bootstrap.min.css">
+<title>editproject.html</title>
+</head>
+<body>
+
+  <div class="container-fluid">
+   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+   <a class="navbar-brand" href="#">Project Explorer</a>
+
+   <form class="form-inline">
+     <label for="searchForm"></label>
+     <input class="form-control" placeholder="Search Projects"/>
+     <button type="button" class="btn btn-outline-light btn-mg-10 btn-primary">Search</button>
+  </form>
+
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="navbar-item">
+          <a class="nav-link" href="#">Submit</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="navbar-item">
+          <a class="nav-link" href="#">Sign Up</a>
+        </li>
+        <li class="navbar-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+      </ul>
+   </div>
+  </nav> <br>
+  <main> 
+    <div class="container">
+    <h3>Project 1</h3>
+     <div class="container bg-light pt-2">
+      <div class="row">
+        <div class="col">
+     <ul class="list-unstyled">
+       <li>Created By <br>Ade Chris</li>
+      </div>
+      <div class="col">
+       <li class="list-unstyled">Date Created<br>2020-08-30</li>
+        </div>
+
+        <div class="col">
+        <li class="list-unstyled">Last Updated<br>2020-08-30</li> 
+        </div> 
+        
+        <div class="col">
+          <div class="d-flex justify-content-end">
+            <a class="btn button btn-primary btn-lg" href="viewproject.html" role="button">View Project</a>
+        </div>
+        </div>
+      </ul>
+     </div>
+    </div>
+<br>
+    <div class="row">
+      <div class="col">
+        <div>
+          <h3>Edit Project</h3>
+      <form name="EditProject">
+       <div class="form-group mx-auto">
+ <label for="projectName" class="form-label">Project Name:</label>
+ <input type="text" class="form-control" name ="name" placeholder="Project 1"/>
+ </div>
+ <div class="form-group">
+ <label for="projectAbstract" class="form-label">Project Abstract:</label><br>
+ <textarea id="text" class="form-control" name ="abstract" rows="10" cols="57" placeholder="Project 1 is a very interesting project"></textarea><br>
+ </div>
+ <div class="form-group">
+ <label for="authors" class="form-label">Authors:</label><br>
+ <input type="text" class="form-control" name ="authors" placeholder="Ade Chris"/><br>
+ </div>
+ <div class="form-group">
+ <label for="tags" class="form-label">Tag(s):</label><br>
+ <input type="text" class="form-control" name ="tags" placeholder="#web"/>
+ </div>
+ <button type="submit" class="btn button btn-primary">Save</button>
+       
+ </form> 
+ </div>
+ </div>
+  
+  <div class="col">
+        <div>
+          <h3>Manage Project</h3>
+      <form name="manageProject">
+        <div class="input-group my-3">
+          <input type="text" class="form-control" placeholder="Click to open file browser" id="file"/>
+          <div class="input-group-append">
+            <button type="button" class="browse btn btn-secondary">Browse</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            Project Files
+          </div>
+
+          <div class="card-body">
+            <p class="card-text text-center">No files Uploaded yet</p>
+          </div>
+        </div>
+       
+ </form> 
+ </div>
+ </div>
+  </div>
+</div>
+</div> 
+   </main>
+   <br>
+   <!-- start footer -->
+    <div class="card-footer text-right">
+      Project Explorer © 2020 . <a href="#">Edconnect</a> 
+    </div>
+
+   <!-- end footer -->
+</div>
+<scrip src="/js/jquery.min.js"></scrip>
+<scrip src="/js/jpopper.min.js"></scrip>
+<scrip src="/js/bootstrap.min.js"></scrip>
+</body>
+</html>
